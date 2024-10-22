@@ -1,0 +1,86 @@
+Account:
+AWS free tier
+Github
+Docker Hub
+
+Packages:
+AWS cli  --> aws cli download for windows
+git client 
+terraform
+visual studio 
+notepad++
+docker(optional)
+kubectl(optional)
+
+Cloud Server:
+Jenkins
+Docker
+kubectl
+
+
+################################################################################################vi2###
+
+Aws Free tier:  - manage infra
+https://aws.amazon.com/free/?gclid=Cj0KCQjwgrO4BhC2ARIsAKQ7zUn8jU4XKgL9bptEBFCXszuJcAbaT7TvnPOZRUZQqsU_KPZOn5SqmiMaAqh9EALw_wcB&trk=2738afd4-9401-4d18-8e3e-1b1c194dea07&sc_channel=ps&ef_id=Cj0KCQjwgrO4BhC2ARIsAKQ7zUn8jU4XKgL9bptEBFCXszuJcAbaT7TvnPOZRUZQqsU_KPZOn5SqmiMaAqh9EALw_wcB:G:s&s_kwcid=AL!4422!3!509606977839!p!!g!!aws!12618685604!120373368136&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=2
+explain what are free and 
+1.create account
+2.add user(admin policy) - access key for cli 
+3.check from cli(aws configure - add cred  for communication)
+
+GitHub Account:
+https://github.com/dineshasokan/DevOps --> repo storage(public) - Create account
+
+Git Installation:
+https://git-scm.com/downloads/win --> GIT download - code repositry
+
+DockerHub:
+https://hub.docker.com/ -->create account - store container images
+
+Terraform:
+https://developer.hashicorp.com/terraform/install --> AMD64 version
+set enviorment variable - systemvariables--> enviorment variables --> add terraform path.
+
+Visualstudio:
+https://code.visualstudio.com/download  
+Configure After installation --> extenstation --> aws toolkit, hashicorp terrafrom,docker, kubernetes, Jenkins
+
+#########################################################################################################################
+
+AWS services:
+
+
+Two-tier - diagram
+Three-tier - diagram
+
+https://aws.amazon.com/free/offers/
+IP calculator
+
+Requirement:
+
+ec2-3
+alb-1
+nlb-1
+rds-1
+vpc-1
+subnet-4
+
+#########################################################################################################################
+1.Vpc
+   Four subnet --> zoneA&B
+   route table
+   Internetgateway
+2.ec2 instance
+   3-linux instance- keypair, EBS, NW interface, security group, NAcl- network access control
+   2-private 1-public
+3.ALB
+   Target Group, Lister, health checkup
+4.NLB
+   Target Group, Lister, health checkup
+5.RDS
+   Private RDS
+   
+##########################################################################################################################
+
+
+
+

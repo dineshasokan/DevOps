@@ -1,0 +1,46 @@
+
+DAY 1
+
+DevOps:
+1. Source Code Management (SCM)
+Definition: The process of tracking and controlling changes to software code.
+Tools: Git, Subversion (SVN), Mercurial.
+Purpose: Enables version control, collaboration among developers, and maintaining a history of code changes.
+
+2. Continuous Integration (CI)
+Definition: A development practice where developers frequently merge their code changes into a central repository.
+Purpose: Automatically builds and tests the code to detect issues early, facilitating quicker feedback and reducing
+integration problems.
+
+3. Continuous/Automated Testing
+Definition: The practice of running automated tests on code changes to ensure that new features or fixes do not introduce bugs.
+Purpose: Enhances software quality by providing immediate feedback on code changes and supporting rapid development cycles.
+
+4. Infrastructure as Code (IaC)
+Definition: Managing and provisioning infrastructure through code and automation instead of manual processes.
+Tools: Terraform, Ansible, AWS CloudFormation.
+Purpose: Enables consistent and repeatable deployment of infrastructure, making it easier to manage environments and reduce human error.
+
+5. Continuous Delivery (CD)
+Definition: The practice of keeping code in a deployable state at all times, allowing for frequent and reliable releases to production.
+Purpose: Ensures that software can be released to production at any time, minimizing the risks associated with deployment.
+
+6. Continuous Deployment
+Definition: An extension of continuous delivery where code changes are automatically deployed to production after passing automated tests.
+Purpose: Eliminates manual intervention, enabling teams to release new features and fixes quickly and efficiently.
+
+7. Continuous Monitoring & Feedback
+Definition: The ongoing process of monitoring applications and infrastructure in real-time to gather performance data and user feedback.
+Purpose: Helps identify issues and opportunities for improvement, enabling teams to respond quickly to user needs and operational challenges.
+###########################################################################################################################################################
+
+Day 2: 
+
+Why AWS CLI:
+Access to APIs: The AWS CLI provides direct access to AWS services' public APIs. 
+Automation: You can automate tasks through shell scripts. This makes it ideal for large-scale operations. 
+Efficiency: The AWS CLI is fast and efficient. 
+Simplicity: You can manage your resources using a simple set of commands. 
+Customization: Some AWS services provide customizations for the AWS CLI. 
+Multiple output formats: The AWS CLI supports multiple output formats, including JSON, table, and text.
+And perform complex tasks with specific commands 

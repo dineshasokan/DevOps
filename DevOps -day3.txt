@@ -1,0 +1,55 @@
+vpc1 -  jumpserver -->   Public   --> jump-vpc  10.0.0.0/24 (256) 
+Subnet:
+sn1 - Zone A
+10.0.0.0/25
+1-internetgatway --> attch vpc
+go to routetable and add the intergatway
+####################################################################################
+
+vpc2 - Application, DB, Web -->  Private  --> app-vpc   100.0.0.0/24
+Subnet:
+sn1 - Zone A
+100.0.0.0/25
+sn2 - Zone B
+100.0.0.128/25
+1-internetgatway --> attch vpc
+1.go to routetable and add the intergatway
+
+#############################################################################vi-3###
+ec2: 
+jumpvpcserver --> jumpserver -->amazonlinux -->t2.micro --> keypair (.pem) --> network - select jumpvpc --> public ip enable -->create security group --> launch instance
+
+appvpcserver --> appserver1 -->sn1 --> amazonlinux -->t2.micro --> keypair (.pem) --> network - select jumpvpc --> public ip enable -->create security group 
+                 webserer1 -->sn2 --> amazonlinux -->t2.micro --> keypair (.pem) --> network - select jumpvpc --> public ip enable -->create security group 
+				 
+Test from AWS cli:
+aws ec2 describe-instances
+aws ec2 describe-instances --output table
+
+Connect instance: 
+ssh -i aws.pem ec2-user@ip
+scp -i .\aws.pem .\aws.pem ec2-user@ip:/home/ec2-user/
+
+####################################################################################################
+
+troubleshoot:
+login to jumpserver the scp the app .pem file and try at login into appserver with privateip. it will not work
+
+source :jumpserver : privateip
+destination: app,web : privateip
+
+1.securitygroup
+2.network access control
+3.routetable
+
+In app server route table add peering connection then tr yto connect it will work
+
+In webserver: install httpd, systemctl start httpd --> add in inbound rule --> http,80,all --> hit public ip-->it works
+
+#################################################################################################
+Load balancer
+
+create appLB  --> webLB  --> create Target group 
+
+create network LB -->Network LB
+###################################################End#################################################################
